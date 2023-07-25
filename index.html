@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Google Keep</title>
+    <link rel = "stylesheet" href = "main.css">
+    <link rel = "icon" href = "icons/icon.png" type = "image/icon">
+</head>
+<body>
+    <nav>
+        <div class = "navleft">
+            <img class = "icon" src = "icons/icons8-menu-50.png">
+            <img src = "icons/keep_2020q4_48dp.png">
+            <label>Keep</label>
+            <div class = "navmiddle">
+                <img class = "icon" src = "icons/icons8-search-24.png">
+                <input class = "navinput" type = "text" placeholder = "Search">
+            </div>
+        </div>
+        <div class = "navlast">
+            <img class = "icon" src = "icons/icons8-refresh-24.png">
+            <img class = "icon" src = "icons/download.svg">
+            <img class = "icon" src = "icons/icons8-settings-48.png">
+            <img class = "icon" src = "icons/icons8-circled-menu-24.png">
+            <img class = "icon" src = "icons/icons8-test-account-48.png">
+        </div>
+    </nav>
+    <div class = "content">
+        <div class = "menunav">
+            <nav>
+                <ul>
+                    <li>
+                        <img class = "icon" src = "icons/outline_lightbulb_black_24dp.png">
+                        <span>Notes</span>
+                    </li>
+                    <li>
+                        <img class = "icon" src = "icons/outline_notifications_black_24dp.png">
+                        <span>Remainder</span>
+                    </li>
+                    <li>
+                        <img class = "icon" src = "icons/outline_edit_black_24dp.png">
+                        <span>Edit Label</span>
+                    </li>
+                    <li>
+                        <img class = "icon" src = "icons/outline_archive_black_24dp.png">
+                        <span>Archive</span>
+                    </li>
+                    <li>
+                        <img class = "icon" src = "icons/outline_delete_black_24dp.png">
+                        <span>Trash</span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class = "content1">
+            <div id = "inputbox"> 
+                <input id = "view" type = "text" placeholder = "Title" autocomplete = "off">
+                <input id = "view1" type = "text" placeholder = "Take a note..." autocomplete = "off">
+                <input id = "view2" type = "button" value = "close" onclick = "getnotes()">
+            </div>
+            <input id = "hide" type = "text" placeholder = "Take a note..." onclick = "hideinput()">
+            <div id = "temp">
+                <img class = "centericon" src = "icons/outline_lightbulb_black_24dp.png">
+                <label class = "centericon">Notes you add appear here</label>
+            </div>
+            <div id = "shownote" class = "notes"></div>
+        </div>
+    </div>
+    <script src = "JS.js"></script>
+</body>
+</html>
